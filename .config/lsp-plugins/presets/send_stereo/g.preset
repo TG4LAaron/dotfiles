@@ -1,0 +1,40 @@
+# -------------------------------------------------------------------------------
+# This file contains configuration of the audio plugin.
+#   Package:                 lsp-plugins (Linux Studio Plugins)
+#   Package version:         1.2.25
+#   Plugin name:             Send Stereo (Send Stereo)
+#   Plugin version:          1.0.7
+#   UID:                     send_stereo
+#   CLAP URI:                in.lsp-plug.send_stereo
+#   GStreamer identifier:    lsp-plugins-send-stereo
+#   LV2 URI:                 http://lsp-plug.in/plugins/lv2/send_stereo
+#   VST 2.x identifier:      s01s
+#   VST 3.x identifier:      64737020733031732020202073303173
+# 
+# (C) Linux Studio Plugins
+#   https://lsp-plug.in/
+# 
+# -------------------------------------------------------------------------------
+
+# Bypass [boolean]: true/false
+bypass = false
+
+# Input gain [G]: 0.00000000..1000.00000000
+g_in = 35.54 db
+
+# Output gain [G]: 0.00000000..1000.00000000
+g_out = 0.00 db
+
+# Send gain [G]: 0.00000000..1000.00000000
+g_send = 0.00 db
+
+# Audio send connection point name [string]
+send = ""
+
+
+# -------------------------------------------------------------------------------
+# KVT parameters
+# -------------------------------------------------------------------------------
+
+
+# -------------------------------------------------------------------------------

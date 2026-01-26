@@ -1,0 +1,161 @@
+# -------------------------------------------------------------------------------
+# This file contains configuration of the audio plugin.
+#   Package:                 lsp-plugins (Linux Studio Plugins)
+#   Package version:         1.2.25
+#   Plugin name:             Gate Mono (Gate Mono)
+#   Plugin version:          1.0.32
+#   UID:                     gate_mono
+#   CLAP URI:                in.lsp-plug.gate_mono
+#   GStreamer identifier:    lsp-plugins-gate-mono
+#   LADSPA identifier:       5002114
+#   LADSPA label:            http://lsp-plug.in/plugins/ladspa/gate_mono
+#   LV2 URI:                 http://lsp-plug.in/plugins/lv2/gate_mono
+#   VST 2.x identifier:      ur0e
+#   VST 3.x identifier:      6473702067316D202020202075723065
+# 
+# (C) Linux Studio Plugins
+#   https://lsp-plug.in/
+# 
+# -------------------------------------------------------------------------------
+
+# Side-chain shared memory link [string]
+link = ""
+
+# Show pre-mix overlay [boolean]: true/false
+showpmx = false
+
+# Input to Link mix [G]: 0.00000000..10.00000000
+in2lk = -inf db
+
+# Link to Input mix [G]: 0.00000000..10.00000000
+lk2in = -inf db
+
+# Link to Sidechain mix [G]: 0.00000000..10.00000000
+lk2sc = -inf db
+
+# Bypass [boolean]: true/false
+bypass = false
+
+# Input gain [G]: 0.00000000..1000.00000000
+g_in = 0.00 db
+
+# Output gain [G]: 0.00000000..1000.00000000
+g_out = 0.00 db
+
+# Show mix overlay [boolean]: true/false
+showmx = false
+
+# Show sidechain overlay [boolean]: true/false
+showsc = false
+
+# Pause graph analysis [boolean]: true/false
+pause = false
+
+# Clear graph analysis [boolean]: true/false
+clear = false
+
+# Sidechain input: 0..1
+#   0: Internal
+#   1: Link
+sci = 0
+
+# Sidechain mode: 0..3
+#   0: Peak
+#   1: RMS
+#   2: LPF
+#   3: SMA
+scm = 1
+
+# Sidechain lookahead [ms]: 0.00000000..20.00000000
+sla = 0.00000
+
+# Sidechain listen [boolean]: true/false
+scl = false
+
+# Sidechain reactivity [ms]: 0.00000000..250.00000000
+scr = 10.00000
+
+# Sidechain preamp [G]: 0.00000000..100.00000000
+scp = 0.00 db
+
+# High-pass filter mode: 0..3
+#   0: off
+#   1: 12 dB/oct
+#   2: 24 dB/oct
+#   3: 36 dB/oct
+shpm = 0
+
+# High-pass filter frequency [Hz]: 10.00000000..20000.00000000
+shpf = 10.00000
+
+# Low-pass filter mode: 0..3
+#   0: off
+#   1: 12 dB/oct
+#   2: 24 dB/oct
+#   3: 36 dB/oct
+slpm = 0
+
+# Low-pass filter frequency [Hz]: 10.00000000..20000.00000000
+slpf = 20000.00000
+
+# Hysteresis [boolean]: true/false
+gh = false
+
+# Curve threshold [G]: 0.00100000..1.00000000
+gt = -24.00 db
+
+# Curve zone size [G]: 0.00100000..1.00000000
+gz = -6.00 db
+
+# Hysteresis threshold [G]: 0.00100000..1.00000000
+ht = -12.00 db
+
+# Hysteresis zone size [G]: 0.00100000..1.00000000
+hz = -6.00 db
+
+# Attack [ms]: 0.00000000..2000.00000000
+at = 20.00000
+
+# Release [ms]: 0.00000000..5000.00000000
+rt = 100.00000
+
+# Hold time [ms]: 0.00000000..1000.00000000
+hold = 0.00000
+
+# Reduction [G]: 0.00025119..3981.07299805
+gr = -24.00 db
+
+# Makeup gain [G]: 0.00100000..1000.00000000
+mk = 0.00 db
+
+# Dry gain [G]: 0.00000000..10.00000000
+cdr = -inf db
+
+# Wet gain [G]: 0.00000000..10.00000000
+cwt = 0.00 db
+
+# Dry/Wet balance [%]: 0.00000000..100.00000000
+cdw = 100.00000
+
+# Sidechain level visibility [boolean]: true/false
+slv = true
+
+# Envelope level visibility [boolean]: true/false
+elv = true
+
+# Gain reduction visibility [boolean]: true/false
+grv = true
+
+# Input level visibility [boolean]: true/false
+ilv = true
+
+# Output level visibility [boolean]: true/false
+olv = true
+
+
+# -------------------------------------------------------------------------------
+# KVT parameters
+# -------------------------------------------------------------------------------
+
+
+# -------------------------------------------------------------------------------

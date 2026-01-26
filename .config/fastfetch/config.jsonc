@@ -1,0 +1,219 @@
+// {
+//   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+//   "modules": [
+//     "title",
+//     "separator",
+//     "os",
+//     "host",
+//     "kernel",
+//     "uptime",
+//     "packages",
+//     "shell",
+//     "display",
+//     "de",
+//     "wm",
+//     "wmtheme",
+//     "theme",
+//     "icons",
+//     "font",
+//     "cursor",
+//     "terminal",
+//     "terminalfont",
+//     "cpu",
+//     "gpu",
+//     "memory",
+//     "swap",
+//     "disk",
+//     "localip",
+//     "battery",
+//     "poweradapter",
+//     "locale",
+//     "break",
+//     "colors"
+//   ]
+// }
+// Took from https://discuss.cachyos.org/t/fastfetch-config-tinkering-show-off-your-fetch/18818/3
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+      "logo": {
+        "type": "kitty",
+        "source": "~/.config/fastfetch/otter_round.png",
+        "width": 10,          // Width in characters (for image logos)
+        "height": 4,         // Height in characters (for image logos)
+        "padding": {
+            "top": 0,           // Top padding
+            "left": 2,          // Left padding
+            "right": 2          // Right padding
+        }
+    },
+    "modules": [
+      //  "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m"
+        },
+        {
+            "type": "host",
+            "key": "  PC",
+            "keyColor": "green"
+        },
+        {
+            "type": "cpu",
+            "key": "│ ├ CPU",
+            "showPeCoreCount": true,
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "key": "│ ├󰍛 GPU",
+            "keyColor": "green"
+        },
+        {
+            "type": "gpu",
+            "key": "│ ├󰍛 GPU",
+            "format": "{3}",
+            "keyColor": "green"
+        },
+        {
+            "type": "display",
+            "key": "│ ├󰹑 DISPLAY",
+            "keyColor": "green"
+        },
+        {
+            "type": "sound",
+            "key": "│ ├󰓃 SOUND",
+            "keyColor": "green"
+        },
+        {
+            "type": "memory",
+            "key": "│ ├󰍛 MEMORY",
+            "keyColor": "green"
+        },
+        {
+            "type": "swap",
+            "key": "│ ├󰓡 SWAP",
+            "keyColor": "green"
+        },
+        {
+            "type": "disk",
+            "key": "│ ├ DISK",
+            "keyColor": "green"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m"
+        },
+       // "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m"
+        },
+        {
+            "type": "os",
+            "key": " OS",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "title",
+            "key": "│ ├ USER/HOST",
+            "format": "{user-name}@{host-name}",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "kernel",
+            "key": "│ ├ KERNEL",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "packages",
+            "key": "│ ├󰏖 PACKAGES",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "terminal",
+            "key": "│ ├ TERMINAL",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "terminalfont",
+            "key": "│ ├󰛖 TERMINAL FONT",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "shell",
+            "key": "└ └ SHELL",
+            "keyColor": "yellow"
+       },
+        {
+            "type": "custom",
+            "format": "\u001b[90m"
+        },
+       // "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m"
+        },
+        {
+            "type": "de",
+            "key": " DE",
+            "keyColor": "blue"
+        },
+        {
+            "type": "lm",
+            "key": "│ ├ DISPLAY MANAGER",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wm",
+            "key": "│ ├ WINDOW MANAGER",
+            "keyColor": "blue"
+        },
+        {
+            "type": "wmtheme",
+            "key": "│ ├ THEME",
+            "keyColor": "blue"
+        },
+        {
+            "type": "icons",
+            "key": "│ ├󰉼 ICONS",
+            "keyColor": "blue"
+        },
+        {
+            "type": "font",
+            "key": "│ ├󰛖 SYSTEM FONT",
+            "format": "{3}",
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m"
+        },
+      //  "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m"
+        },
+        // better way? Got from here https://discuss.cachyos.org/t/fastfetch-add-os-age/5487/3
+        {
+            "key": "│ ├󰛖 OS Age",
+            "keyColor": "magenta",
+            "type": "disk",
+            "folders": "/",
+            "format": "{create-time:10} ({days} days)"
+        },
+        {
+            "type": "uptime",
+            "key": "│ ├󰛖 Uptime ",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "custom",
+            "format": "│ ├󰛖 \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
+        },
+        {
+            "type": "custom",
+            "format": "\u001b[90m"
+        },
+     //   "break",
+    ]
+}

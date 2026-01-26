@@ -1,0 +1,157 @@
+# -------------------------------------------------------------------------------
+# This file contains configuration of the audio plugin.
+#   Package:                 lsp-plugins (Linux Studio Plugins)
+#   Package version:         1.2.25
+#   Plugin name:             Begrenzer Mono (Limiter Mono)
+#   Plugin version:          1.0.30
+#   UID:                     limiter_mono
+#   CLAP URI:                in.lsp-plug.limiter_mono
+#   GStreamer identifier:    lsp-plugins-limiter-mono
+#   LADSPA identifier:       5002122
+#   LADSPA label:            http://lsp-plug.in/plugins/ladspa/limiter_mono
+#   LV2 URI:                 http://lsp-plug.in/plugins/lv2/limiter_mono
+#   VST 2.x identifier:      jz5z
+#   VST 3.x identifier:      6473702062316D20202020206A7A357A
+# 
+# (C) Linux Studio Plugins
+#   https://lsp-plug.in/
+# 
+# -------------------------------------------------------------------------------
+
+# Side-chain shared memory link [string]
+link = ""
+
+# Show pre-mix overlay [boolean]: true/false
+showpmx = false
+
+# Input to Link mix [G]: 0.00000000..10.00000000
+in2lk = -inf db
+
+# Link to Input mix [G]: 0.00000000..10.00000000
+lk2in = -inf db
+
+# Link to Sidechain mix [G]: 0.00000000..10.00000000
+lk2sc = -inf db
+
+# Bypass [boolean]: true/false
+bypass = false
+
+# Input gain [G]: 0.00000000..1000.00000000
+g_in = 0.00 db
+
+# Output gain [G]: 0.00000000..1000.00000000
+g_out = 0.00 db
+
+# Sidechain preamp [G]: 0.00000000..100.00000000
+scp = 0.00 db
+
+# Automatic level regulation [boolean]: true/false
+alr = true
+
+# Automatic level regulation attack time [ms]: 0.10000000..200.00000000
+alr_at = 5.00000
+
+# Automatic level regulation release time [ms]: 10.00000000..1000.00000000
+alr_rt = 50.00000
+
+# Operating mode: 0..11
+#   0: Herm Thin
+#   1: Herm Wide
+#   2: Herm Tail
+#   3: Herm Duck
+#   4: Exp Thin
+#   5: Exp Wide
+#   6: Exp Tail
+#   7: Exp Duck
+#   8: Line Thin
+#   9: Line Wide
+#   10: Line Tail
+#   11: Line Duck
+mode = 0
+
+# Threshold [G]: 0.00398107..1.00000000
+th = 0.00 db
+
+# Knee [G]: 0.25119001..3.98107004
+knee = 0.00 db
+
+# Gain boost [boolean]: true/false
+boost = true
+
+# Lookahead [ms]: 0.10000000..20.00000000
+lk = 5.00000
+
+# Attack time [ms]: 0.25000000..20.00000000
+at = 5.00000
+
+# Release time [ms]: 0.25000000..20.00000000
+rt = 5.00000
+
+# Oversampling: 0..22
+#   0: None
+#   1: Half x2/16 bit
+#   2: Half x2/24 bit
+#   3: Half x3/16 bit
+#   4: Half x3/24 bit
+#   5: Half x4/16 bit
+#   6: Half x4/24 bit
+#   7: Half x6/16 bit
+#   8: Half x6/24 bit
+#   9: Half x8/16 bit
+#   10: Half x8/24 bit
+#   11: Full x2/16 bit
+#   12: Full x2/24 bit
+#   13: Full x3/16 bit
+#   14: Full x3/24 bit
+#   15: Full x4/16 bit
+#   16: Full x4/24 bit
+#   17: Full x6/16 bit
+#   18: Full x6/24 bit
+#   19: Full x8/16 bit
+#   20: Full x8/24 bit
+#   21: True Peak/16 bit
+#   22: True Peak/24 bit
+ovs = 0
+
+# Dithering: 0..8
+#   0: None
+#   1: 7bit
+#   2: 8bit
+#   3: 11bit
+#   4: 12bit
+#   5: 15bit
+#   6: 16bit
+#   7: 23bit
+#   8: 24bit
+dith = 0
+
+# Pause graph analysis [boolean]: true/false
+pause = false
+
+# Clear graph analysis [boolean]: true/false
+clear = false
+
+# Sidechain type: 0..1
+#   0: Internal
+#   1: Link
+extsc = 0
+
+# Input graph visibility [boolean]: true/false
+igv = true
+
+# Output graph visibility [boolean]: true/false
+ogv = true
+
+# Sidechain graph visibility [boolean]: true/false
+scgv = true
+
+# Gain graph visibility [boolean]: true/false
+grgv = true
+
+
+# -------------------------------------------------------------------------------
+# KVT parameters
+# -------------------------------------------------------------------------------
+
+
+# -------------------------------------------------------------------------------
